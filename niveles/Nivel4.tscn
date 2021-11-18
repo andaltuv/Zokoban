@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://misc/piso_tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://misc/caja_target.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Nivel4.gd" type="Script" id=3]
+[ext_resource path="res://misc/Caja.tscn" type="PackedScene" id=4]
+[ext_resource path="res://personajes/Player.tscn" type="PackedScene" id=5]
+
+[node name="Nivel4" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 6, 1, 0, 7, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 0, 11, 1, 0, 12, 1, 0, 13, 1, 0, 14, 1, 0, 15, 1, 0, 65536, 1, 0, 65537, 3, 0, 65538, 3, 0, 65539, 3, 0, 65540, 3, 0, 65541, 1, 0, 65542, 1, 0, 65543, 0, 0, 65544, 1, 0, 65545, 1, 0, 65546, 3, 0, 65547, 3, 0, 65548, 3, 0, 65549, 3, 0, 65550, 3, 0, 65551, 1, 0, 131072, 1, 0, 131073, 3, 0, 131074, 0, 0, 131075, 0, 0, 131076, 3, 0, 131077, 3, 0, 131078, 3, 0, 131079, 3, 0, 131080, 3, 0, 131081, 3, 0, 131082, 3, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0, 131086, 3, 0, 131087, 1, 0, 196608, 1, 0, 196609, 3, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 196622, 3, 0, 196623, 0, 0, 262144, 1, 0, 262145, 3, 0, 262146, 0, 0, 262147, 0, 0, 262148, 3, 0, 262149, 3, 0, 262150, 3, 0, 262151, 3, 0, 262152, 0, 0, 262153, 3, 0, 262154, 3, 0, 262155, 3, 0, 262156, 0, 0, 262157, 0, 0, 262158, 3, 0, 262159, 1, 0, 327680, 1, 0, 327681, 3, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 327692, 0, 0, 327693, 0, 0, 327694, 3, 0, 327695, 1, 0, 393216, 1, 0, 393217, 3, 0, 393218, 0, 0, 393219, 0, 0, 393220, 3, 0, 393221, 3, 0, 393222, 3, 0, 393223, 3, 0, 393224, 3, 0, 393225, 3, 0, 393226, 3, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 3, 0, 393231, 1, 0, 458752, 1, 0, 458753, 3, 0, 458754, 3, 0, 458755, 3, 0, 458756, 3, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458761, 1, 0, 458762, 3, 0, 458763, 3, 0, 458764, 3, 0, 458765, 3, 0, 458766, 3, 0, 458767, 1, 0, 524288, 1, 0, 524289, 0, 0, 524290, 1, 0, 524291, 1, 0, 524292, 1, 0, 524293, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 0, 0, 524299, 0, 0, 524300, 1, 0, 524301, 1, 0, 524302, 1, 0, 524303, 1, 0, 589824, 1, 0, 589825, 1, 0, 589826, 1, 0, 589827, 1, 0, 589828, 1, 0, 589829, 1, 0, 589830, 1, 0, 589831, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589835, 1, 0, 589836, 1, 0, 589837, 1, 0, 589838, 1, 0, 589839, 0, 0 )
+
+[node name="caja_target" parent="." instance=ExtResource( 2 )]
+position = Vector2( 862, 290 )
+
+[node name="caja_target2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 864, 417 )
+
+[node name="caja_target3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 864, 158 )
+
+[node name="Caja" parent="." instance=ExtResource( 4 )]
+position = Vector2( 544, 288 )
+
+[node name="Caja2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 224, 286 )
+
+[node name="Caja3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 224, 350 )
+
+[node name="Player" parent="Caja3" instance=ExtResource( 5 )]
+position = Vector2( -66, -183 )
+
+[connection signal="caja_en_objetivo" from="caja_target" to="." method="_on_caja_target_caja_en_objetivo"]
+[connection signal="caja_en_objetivo" from="caja_target2" to="." method="_on_caja_target_caja_en_objetivo"]
+[connection signal="caja_en_objetivo" from="caja_target3" to="." method="_on_caja_target_caja_en_objetivo"]
